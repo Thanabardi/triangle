@@ -13,7 +13,7 @@ Use code coverage to find untested code and a problem with the tests.
 
 2. Run the tests using code coverage, then generate an html coverage report:
    ```bash
-   coverage run -u unittest triange_test.py
+   coverage run -u unittest triangle_test.py
    coverage html
    ```
 
@@ -21,22 +21,22 @@ Use code coverage to find untested code and a problem with the tests.
 
 4. Is there any part of the code under test (`trinagle.py`) that was not tested?
 
-   Write the Line Numbers here: [          ]
+   Write the Line Numbers here: [22]
 
 5. Modify the tests so that all lines of the code are tested.
 
 6. Run coverage again with the `--branch` option to see if all branches of "if" statements are covered:
    ```bash
-   coverage run --branch -u unittest triange_test.py
+   coverage run --branch -u unittest triangle_test.py
    coverage html
    ```
 
 7. What lines in the **unit test code** were not executed?     
-   Write the Line Numbers: [                  ]
+   Write the Line Numbers: [-]
 
 8. Normally, **all** the lines of test code should be executed.  When some part of test code is not executed it may indicate a problem with the tests.  Explain the problem in the unit test code. (write you answer below).
 
-   Answer:
+   Answer: It's seems like all the line of my test code are executed.
 
 
 
