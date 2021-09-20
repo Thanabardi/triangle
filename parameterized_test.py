@@ -44,7 +44,6 @@ class TriangleTest(unittest.TestCase):
     def test_invalid_argument_raises_exception(self):
         """any non-positive argument should raise ValueError"""
         for a, b, c in self.invalid_argument:
-            with self.subTest():
-                msg = f"with the sides ({a}, {b}, {c})"
-                with self.assertRaises(ValueError, msg=msg):
-                    triangle = is_triangle(a, b, c)
+            msg = f"with the sides ({a}, {b}, {c})"
+            with self.subTest(), self.assertRaises(ValueError, msg=msg):
+                triangle = is_triangle(a, b, c)
